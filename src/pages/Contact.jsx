@@ -22,13 +22,13 @@ const Contact = () => {
               <div style={{ padding: '0.5rem', background: 'rgba(99, 102, 241, 0.1)', borderRadius: '0.5rem' }}>
                 <Mail size={20} style={{ color: 'var(--primary)' }} />
               </div>
-              <span style={{ fontSize: '0.95rem' }}>support@smarttask.com</span>
+              <span style={{ fontSize: '0.95rem' }}>support@smartTask.com</span>
             </div>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
               <div style={{ padding: '0.5rem', background: 'rgba(99, 102, 241, 0.1)', borderRadius: '0.5rem' }}>
                 <Phone size={20} style={{ color: 'var(--primary)' }} />
               </div>
-              <span style={{ fontSize: '0.95rem' }}>+91 98876 82341</span>
+              <span style={{ fontSize: '0.95rem' }}>+91 12345 12345</span>
             </div>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
               <div style={{ padding: '0.5rem', background: 'rgba(99, 102, 241, 0.1)', borderRadius: '0.5rem' }}>

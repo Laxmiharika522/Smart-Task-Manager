@@ -19,7 +19,6 @@ const Home = () => {
     localStorage.setItem('tasks', JSON.stringify(state));
   }, [state]);
 
-  // Statistics
   const stats = useMemo(() => {
     const total = state.length;
     const completed = state.filter(t => t.completed).length;
@@ -66,7 +65,7 @@ const Home = () => {
     <div className="animate-pop">
       <header style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
         <h1 style={{ fontSize: 'clamp(2rem, 8vw, 3.5rem)', fontWeight: '800', lineHeight: 1.1, marginBottom: '0.75rem' }}>
-          Smart <span style={{ color: 'var(--primary)', position: 'relative' }}>
+          Smart<span style={{ color: 'var(--primary)', position: 'relative' }}>
             Task
             <span style={{ position: 'absolute', bottom: '0', left: '0', width: '100%', height: '4px', background: 'var(--primary-glow)', borderRadius: '2px' }}></span>
           </span>
@@ -74,7 +73,6 @@ const Home = () => {
         <p style={{ opacity: 0.6, fontSize: '1rem', maxWidth: '400px', margin: '0 auto' }}>Elevate your productivity with a premium workflow.</p>
       </header>
 
-      {/* Stats Dashboard */}
       <div className="stat-grid">
         <div className="glass-card stat-card">
           <Target size={22} style={{ color: 'var(--primary)', marginBottom: '0.4rem' }} />
@@ -130,7 +128,7 @@ const Home = () => {
         </form>
       </div>
 
-      {/* Search and Filters */}
+
       <div className="glass-card" style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <div style={{ position: 'relative' }}>
           <Search size={18} style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', opacity: 0.4 }} />
@@ -216,8 +214,8 @@ const Home = () => {
                       <span style={{ 
                         fontSize: '1.05rem', 
                         fontWeight: '600', 
-                        textDecoration: task.completed ? 'line-through' : 'none',
-                        opacity: task.completed ? 0.6 : 1
+                        textDecoration: 'none',
+                        opacity: task.completed ? 0.4 : 1
                       }}>
                         {task.text}
                       </span>
@@ -296,4 +294,3 @@ const Home = () => {
 };
 
 export default Home;
-

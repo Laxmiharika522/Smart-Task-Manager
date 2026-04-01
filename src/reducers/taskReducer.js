@@ -12,7 +12,6 @@ export const initialState = JSON.parse(localStorage.getItem('tasks')) || [];
 export const taskReducer = (state, action) => {
   switch (action.type) {
     case ACTION_TYPES.ADD_TASK:
-      // Action payload now contains { text, priority }
       return [
         ...state, 
         { 

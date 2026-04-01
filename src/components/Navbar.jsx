@@ -28,7 +28,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Mobile Top Bar (Logo + Theme) */}
       <div className="top-bar">
         <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.25rem', fontWeight: 'bold', color: 'var(--primary)' }}>
           <Layout size={22} />
@@ -39,7 +38,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Desktop Navigation */}
       <nav className="nav-desktop">
         <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--primary)' }}>
           <Layout size={24} />
@@ -53,7 +51,6 @@ const Navbar = () => {
         </button>
       </nav>
 
-      {/* Mobile Bottom Navigation */}
       <nav className="mobile-nav">
         <NavLink to="/" end className={({ isActive }) => `mobile-nav-link ${isActive ? 'active' : ''}`}>
           <Home size={24} />

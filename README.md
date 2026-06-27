@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✅ Smart Task Manager
+# Smart Task Manager
 
 **A modern, full-featured task management web application built with React + Vite.**  
 Manage your tasks with priority levels, real-time filtering, light/dark theme, and persistent storage — all in a sleek, responsive interface.
@@ -153,8 +153,4 @@ Open **http://localhost:5173** in your browser.
 
 **Laxmiharika** — [GitHub @Laxmiharika522](https://github.com/Laxmiharika522)
 
----
 
-<div align="center">
-  Made by <a href="https://github.com/Laxmiharika522">Laxmiharika</a> · Built with React + Vite · Deployed on Vercel
-</div>

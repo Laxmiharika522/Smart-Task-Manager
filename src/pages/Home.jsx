@@ -1,5 +1,5 @@
 import React, { useReducer, useEffect, useState, useMemo } from 'react';
-import { taskReducer, initialState, ACTION_TYPES } from '../reducers/taskReducer';
+import { taskReducer, ACTION_TYPES } from '../reducers/taskReducer';
 import { 
   Plus, Check, Trash2, XCircle, Edit2, Save, X, Search, 
   BarChart2, Zap, Target, AlertCircle, Clock 
@@ -7,7 +7,7 @@ import {
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const [state, dispatch] = useReducer(taskReducer, initialState);
+  const [state, dispatch] = useReducer(taskReducer, undefined, () => JSON.parse(localStorage.getItem('tasks')) || []);
   const [text, setText] = useState('');
   const [priority, setPriority] = useState('low');
   const [search, setSearch] = useState('');
